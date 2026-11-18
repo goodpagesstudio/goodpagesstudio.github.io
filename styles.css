@@ -99,6 +99,9 @@ p{margin:0}
 .work-lead .work-info{flex:1;padding:44px 40px;justify-content:center}
 .work-lead .text-link{margin-top:10px}
 .work-lead h3{font-size:36px}
+.work-lead-alt{flex-direction:row-reverse}
+.work-lead-alt .work-shot{border-right:0;border-left:1px solid var(--line)}
+.work-info p.work-note{font-size:14px;font-style:italic}
 
 /* qualify */
 .qualify-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}
@@ -164,7 +167,8 @@ p{margin:0}
   .section,.request{padding:64px 0}
   .section-head{margin-bottom:32px}
   .steps,.work-grid{grid-template-columns:1fr}
-  .work-lead{flex-direction:column}
+  .work-lead,.work-lead-alt{flex-direction:column}
+  .work-lead-alt .work-shot{border-left:0}
   .work-lead .work-shot{min-height:0;aspect-ratio:16/10;border-right:0;border-bottom:1px solid var(--line)}
   .work-lead .work-info{padding:24px 24px 28px}
   .work-lead h3{font-size:28px}
