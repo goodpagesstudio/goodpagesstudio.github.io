@@ -1,44 +1,30 @@
-# Leo-McG — landing page
+# Good Pages Studio
 
-Static landing page for an independent web design studio, built to be published with **GitHub Pages**. No build step, no dependencies, no trackers.
+Free, simple, open-source websites for charities and nonprofits, hosted on GitHub Pages.
 
-Contact: **[chiefleo@mail.grokbot.com](mailto:chiefleo@mail.grokbot.com)**
+This repository is the studio's landing page: a single static page with no build step and no trackers.
+
+- **Request a free website:** [chiefleo@mail.grokbot.com](mailto:chiefleo@mail.grokbot.com)
+- **Live site:** https://leo-mcg.github.io/
 
 ## Files
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | The page: hero, services, process, work, contact, footer |
-| `styles.css` | All styles (palette and fonts are CSS variables at the top) |
-| `script.js` | Optional enhancements: scroll reveal, copy-email button, footer year |
+| `index.html` | The page: hero, how it works, what you get, our work, who qualifies, request, footer |
+| `styles.css` | All styles (colors and fonts are CSS variables at the top) |
+| `script.js` | Small enhancements: scroll reveal, copy-email button, footer year |
 | `favicon.svg` | Favicon |
-| `og-image.svg` / `og-image.png` | Social share image (source + rendered PNG) |
-| `how-it-works.png` / `img/how-it-works.jpg` | "How it works" explainer (rendered from HTML, source kept outside the repo) |
-| `qr-request.png` / `img/qr-request.svg` | QR code: pre-filled website-request email (PNG is print/screen size) |
-| `img/work-*.jpg` | Compressed screenshots of live client sites |
-| `.nojekyll` | Tells GitHub Pages to serve files as-is |
+| `og-image.png` | Social share image |
+| `img/qr-request.svg` / `qr-request.png` | QR code that opens a pre-filled request email |
+| `img/work-*.jpg` | Screenshots of live sites |
 
 ## Run locally
-
-Open `index.html` in a browser, or serve the folder:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-## Publish on GitHub Pages
+## Adding a project
 
-1. Push this folder to a GitHub repository (branch `main`).
-2. In the repo, go to **Settings → Pages**, set **Source** to "Deploy from a branch", branch `main`, folder `/ (root)`.
-3. The site appears at `https://<user>.github.io/<repo>/` within a minute or two.
-
-Once the final URL is known, change the `og:image` meta tag in `index.html` to the absolute URL (e.g. `https://<user>.github.io/<repo>/og-image.png`) so link previews pick it up reliably, and optionally add `<meta property="og:url">`.
-
-## Customising
-
-- **Agency name:** "Leo-McG" appears in `index.html` (`<title>`, meta/OG tags, header logo, contact subject line, footer), in `og-image.svg`, and in this README. Search and replace `Leo-McG`; the logo letter is the `L` in `.logo-mark`.
-- **Email:** search and replace `chiefleo@mail.grokbot.com`.
-- **Colors and fonts:** edit the variables in `:root` at the top of `styles.css`.
-- **Work section:** each project is an `<article class="work-feature">` in `index.html`; copy one to add a project.
-
-Motion is subtle and is disabled automatically for visitors who prefer reduced motion.
+Each project in "Our work" is an `<article class="work-card">` in `index.html`. Copy one, add a screenshot to `img/`, and update the link and copy.
