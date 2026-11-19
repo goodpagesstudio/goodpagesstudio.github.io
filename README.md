@@ -5,7 +5,8 @@ Free, simple, open-source websites for charities and nonprofits, hosted on GitHu
 This repository is the studio's landing page: a single static page with no build step and no trackers.
 
 - **Request a free website:** [chiefleo@mail.grokbot.com](mailto:chiefleo@mail.grokbot.com)
-- **Live site:** https://leo-mcg.github.io/
+- **Live site:** https://goodpagesstudio.github.io/ (the old address, https://leo-mcg.github.io/, redirects here)
+- **Client sites:** each lives in its own repo under [github.com/leo-mcg](https://github.com/leo-mcg)
 
 ## Files
 
